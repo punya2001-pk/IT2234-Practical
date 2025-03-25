@@ -31,7 +31,8 @@ GET /
 **Response:**
 Returns all students.
 
-📌 _Upload Screenshot Here_
+![1](https://github.com/user-attachments/assets/7c73d8a0-d78d-49dc-91b4-f79cb4b2fa06)
+
 
 ---
 
@@ -43,7 +44,8 @@ GET /third-student
 **Response:**
 Returns the information of the third student in the list.
 
-📌 _Upload Screenshot Here_
+![2](https://github.com/user-attachments/assets/a4ef56a7-0280-4785-96a4-e445bd14adc2)
+
 
 ---
 
@@ -54,12 +56,13 @@ GET /stu/:id
 ```
 **Example:**
 ```
-GET /stu/2021ICT36
+GET /stu/2021ICT01
 ```
 **Response:**
 Returns the student with the specified registration number.
 
-📌 _Upload Screenshot Here_
+![3](https://github.com/user-attachments/assets/9288c0fa-c2b4-462f-bfc0-f0dfa7a8f15f)
+
 
 ---
 
@@ -70,12 +73,13 @@ GET /stu/gender/:gen
 ```
 **Example:**
 ```
-GET /stu/gender/Male
+GET /stu/gender/Female
 ```
 **Response:**
 Returns all students matching the specified gender.
 
-📌 _Upload Screenshot Here_
+![4](https://github.com/user-attachments/assets/07304e5f-2f7a-4d42-932f-7e71650558fd)
+
 
 ---
 
@@ -91,6 +95,9 @@ Returns all students matching the specified gender.
 ```sh
 Server is running on: http://localhost:3001
 ```
+
+![5](https://github.com/user-attachments/assets/7c70b5c2-dcc4-4266-9f62-9616e2b158b7)
+
 
 ## Contributions
 Feel free to modify and improve the API. Open a pull request with your changes!
