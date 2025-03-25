@@ -1,0 +1,14 @@
+{
+  "name": "day05",
+  "version": "1.0.0",
+  "description": "This project demonstrates a simple REST API using Express.js to retrieve student data.",
+  "main": "Pro1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
