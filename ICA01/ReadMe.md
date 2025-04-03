@@ -1,97 +1,33 @@
-# Express.js Student API
+# IT2234: Web Service and Server Technologies - Practical
+# ICAE 01
 
-This project demonstrates a simple REST API using Express.js to retrieve student data.
+1. A buyer wants to find whether a computer keyboard and a mouse can be purchased
+within a specific budget. Write a code to input the budget and the prices of each item
+available. The program should return the maximum possible purchase amount that is
+less than or equal to the budget. If no feasible purchase is available, return -1.
 
-## Prerequisites
-- Install [Node.js](https://nodejs.org/)
-- Install [Postman](https://www.postman.com/) to test API requests
+![1](https://github.com/user-attachments/assets/54ea9e0b-661a-4317-a61b-aebe347816fe)
 
-## Setup Instructions
 
-### Step 1: Initialize the Node.js Project
-Run the following command in your terminal to initialize a new Node.js project:
-```sh
-npm init 
-```
+2. Identify the unique programming languages known to the students from the provided
+JSON data in the Data.js file.
+Expected output:
+[ 'Java’, ‘JavaScript’, ‘C++', 'Python’, ‘C', 'Go', 'Swift', 'R', 'SQL', Ruby', Bash']
 
-### Step 2: Install Required Packages
-Install Express and Nodemon:
-```sh
-npm install express
-npx install nodemon
-```
+![2](https://github.com/user-attachments/assets/34ac7a63-be87-4621-a1be-bb590ec6c2ff)
 
-## API Endpoints
 
-### 1. Get All Students
-**Request:**
-```
-GET /
-```
-**Response:**
-Returns all students.
+3. Rearrange the digits of a given number to create a maximum value. The number should
+have a minimum of 2 digits. Note: input and output should be numbers.
+For example:
+Input number = 215, Max = 521
+Input number = 1093, Max = 9310
 
-📌 _Upload Screenshot Here_
+![3](https://github.com/user-attachments/assets/a878783a-d83a-4441-b9c0-37d9ee56ed93)
 
----
 
-### 2. Get Third Student
-**Request:**
-```
-GET /third-student
-```
-**Response:**
-Returns the information of the third student in the list.
+4. Convert a decimal number to a Hexadecimal number using recursion and callback
+function techniques. You have given a switch case function called HexSWC in the Q4.js
+file, you may use it as a callback function to complete the task.
 
-📌 _Upload Screenshot Here_
-
----
-
-### 3. Find Student by Registration Number
-**Request:**
-```
-GET /stu/:id
-```
-**Example:**
-```
-GET /stu/2021ICT36
-```
-**Response:**
-Returns the student with the specified registration number.
-
-📌 _Upload Screenshot Here_
-
----
-
-### 4. Filter Students by Gender
-**Request:**
-```
-GET /stu/gender/:gen
-```
-**Example:**
-```
-GET /stu/gender/Male
-```
-**Response:**
-Returns all students matching the specified gender.
-
-📌 _Upload Screenshot Here_
-
----
-
-## Running the Server
-1. Open a terminal and navigate to the project folder.
-2. Start the server using Nodemon:
-   ```sh
-   npx nodemon .\Example.js
-   ```
-3. Open Postman and test the API endpoints listed above.
-
-## Expected Console Output
-```sh
-Server is running on: http://localhost:3001
-```
-
-## Contributions
-Feel free to modify and improve the API. Open a pull request with your changes!
-
+![4](https://github.com/user-attachments/assets/6796c727-d17a-4d10-87bb-52b2f6f7a630)
