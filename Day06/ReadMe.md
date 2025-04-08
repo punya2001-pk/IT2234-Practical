@@ -1,13 +1,32 @@
 # Output
-
+- Asynchronous File Reading in Node.js Using fs.readFile()
+    1. Loads the file system module (fs) so you can work with files.
+    2. Reads a file called file.txt asynchronously (in the background).
+    3. If there's an error, it shows the error.
+    4. If the file is read successfully, it prints the contents of the file.
+    5. While the file is being read, it immediately prints: "File reading is done..."
 
 ![1](https://github.com/user-attachments/assets/37e72ed3-07c3-439d-848a-074b7f0e1564)
 
+- Reading a File in Node.js Using Promises
+    1. This code reads a file named file.txt using Promises, which is a modern way to handle asynchronous tasks 
+       JavaScript.
+    2. It defines a function readFile() that takes a file path and returns a promise to read the file.
+    3. When the file is read successfully, it prints the file's content using .then().
+    4. If there's an error (like the file not existing), it catches and prints the error using .catch().
 
 ![2](https://github.com/user-attachments/assets/c596e8a4-beb7-43e5-89e3-07899c0b0469)
 
 
 ![3](https://github.com/user-attachments/assets/86573310-e79e-429c-a7f1-0d023fbcceb4)
+
+- Reading Multiple Files in Node.js Using async/await and Promise.allSettled
+    1. This code reads two files: file.txt and data.txt.
+    2. It uses Promise.allSettled() to run both file reads at the same time.
+    3. Even if one of the file reads fails, it won't stop the other — you still get the result of both.
+    4. The result includes:
+          .value if the file read was successful.
+          .status tells whether it was 'fulfilled' or 'rejected'.
 
 
 ![4](https://github.com/user-attachments/assets/ebc0ebb7-7bc6-43de-944a-703b19803c2a)
