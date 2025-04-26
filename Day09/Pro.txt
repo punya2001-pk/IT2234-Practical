@@ -1,0 +1,147 @@
+// command for mongosh(output 1)
+
+db["students"].find(//click enter)
+
+use unidb
+
+show databases;
+
+show collections
+
+use local
+
+use unidb
+
+// insert to data(output 2,3)
+
+{
+  "regno": "2021IT01",
+  "name": "Kolins",
+  "age": 25,
+  "degree": "IT",
+  "gpa": 3.2,
+  "skills": [
+    "JS",
+    "MongoDB",
+    "Node"
+  ],
+  "gender": "Male"
+}
+
+// clone to data(edit first document and clone to it)(output 4,5)
+
+{
+  "regno": "2021IT02",
+  "name": "Jeny",
+  "age": 23,
+  "degree": "IT",
+  "gpa": 3.5,
+  "gender": "Female",
+  "skills": [
+    "JS",
+    "MongoDB",
+    "mySQL"
+  ]
+}
+
+// Insert into data to our databse(type in the mongosh shell)(output 7)
+
+db.students.insertOne(
+{
+  "regno": "2021IT02",
+  "name": "Jeny",
+  "age": 23,
+  "degree": "IT",
+  "gpa": 3.5,
+  "gender": "Female",
+  "skills": [
+    "JS",
+    "MongoDB",
+    "mySQL"
+  ]
+}
+)
+
+// Refresh(output 8)
+
+// insert to many data in one time(output 9)
+
+db.students.insertMany([
+{
+  "regno": "2021IT03",
+  "name": "Peeter",
+  "age": 22,
+  "degree": "IT",
+  "gpa": 2.9,
+  "gender": "Male",
+  "skills": [
+    "JS",
+    "MongoDB",
+    "mySQL"
+  ]
+},
+
+{
+  "regno": "2021IT04",
+  "name": "Asha",
+  "age": 20,
+  "degree": "IT",
+  "gpa": 2.5,
+  "gender": "Female",
+  "skills": [
+    "JS",
+    "MongoDB",
+    "Node"
+  ]
+}
+])
+
+// options
+
+{name:1,age:1,_id:0} // type to project
+
+// click find(output 10)
+
+// find the regno:2021IT03(output 11)
+
+{"regno":"2021IT03"}
+
+// find the gender:Female(output 12)
+
+{"gender":"Female"}
+
+// How to find the gender:Female using mongo shell(output 13)
+
+db.students.find({"gender":"Female"})
+
+// How to find only one Female student using mongo shell(output 14)
+
+db.students.findOne({"gender":"Female"})
+
+// How to find age is greater 23 using mongo shell
+
+db.students.find({age:{$gt:23}}) //shell (output15)
+
+{age:{$gt:23}} // (output 16)
+
+// Find the studets skills:Node (output 17)
+
+{skills:{$in:['Node']}}
+
+// Find the students skills:MongoDB and JS (output 18)
+
+{skills:{$in:['MongoDB','JS']}}
+
+// sort the students gpa 
+
+{gpa:1} // Accending order (Output 19)
+
+db.students.find({'degree':'IT'}).sort({'gpa':1}) // using shell
+
+{gpa:-1} // Deccending order (Output 20)
+
+db.students.find({'degree':'IT'}).sort({'gpa':-1}) // using shell
+
+// Find the students degree:IT, gender:male and sort it age
+
+db.students.find({'degree':'IT','gender':'Male'}).sort({'age':1}) // (output 21)
