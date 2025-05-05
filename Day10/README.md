@@ -59,5 +59,122 @@ Method2:
 
 # Pro2
 
+## create a database bookshop
+## create a collection books
 
+## 01. insert the following data 
+{
+  "title": "The Hobbit",
+  "author": "J.R.R. Tolkien",
+  "published_year": 1937,
+  "genres": ["Fantasy", "Adventure"],
+  "pages": 310,
+  "available": true,
+  "rating": 4.8
+}
+
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "published_year": 1949,
+    "genres": ["Dystopian", "Political Fiction"],
+    "pages": 328,
+    "available": true,
+    "rating": 4.7
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "published_year": 1960,
+    "genres": ["Southern Gothic", "Drama"],
+    "pages": 281,
+    "available": false,
+    "rating": 4.6
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "published_year": 1925,
+    "genres": ["Tragedy"],
+    "pages": 180,
+    "available": true,
+    "rating": 4.4
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "published_year": 1932,
+    "genres": ["Science Fiction", "Dystopian"],
+    "pages": 311,
+    "available": true,
+    "rating": 4.2
+  }
+
+
+![1](https://github.com/user-attachments/assets/48606b29-26b8-46c8-8d18-97f39aa1e4a6)
+
+  
+
+## 02. Find all books 
+
+![2](https://github.com/user-attachments/assets/d71a4f1e-dd5a-4b64-ae07-d969ad67fda4)
+
+
+![3](https://github.com/user-attachments/assets/fea16703-8fd7-49b1-acc7-c2ee3ac0254b)
+
+
+![4](https://github.com/user-attachments/assets/764340b3-c3d3-4dea-94fc-6da034170c93)
+
+
+
+## 03. Find all books published after 1950 
+
+![5](https://github.com/user-attachments/assets/124ccb06-b55b-450d-bfbd-276c49239a68)
+
+
+## 04. Find the avilable books 
+
+![6](https://github.com/user-attachments/assets/04d0f988-8f60-4cca-bf99-8599e0c620ec)
+
+
+![7](https://github.com/user-attachments/assets/40992fea-b5fd-4b74-8f36-fb249046070a)
+
+		
+## 05. Find all books that belong to the "Dystopian" genres 
+
+![8](https://github.com/user-attachments/assets/50446c55-a617-4728-b68d-b361909dc8d2)
+
+		
+## 06. Find the books which published after 1960 and had rating more than 4.0
+
+		db.books.find({published_year:{$gt:1950},rating:{$gt:4.0}})
+
+## 07. Project only title and author fields:
+
+		db.books.find().projection(['title','author'])
+		
+## 08. Update the book "1984" to set available: false:
+
+		db.books.updateOne({title:'1984'},{$set:{available:false}})
+		db.books.findOne({title:'1984'})
+
+## 09. Increase the rating of "Brave New World" by +0.1:
+
+		db.books.updateOne({title:'Brave New World'},{$inc:{rating:0.1}})
+
+## 10. Add a new genres "Classic" to "The Great Gatsby":
+
+		db.books.updateOne({title:'The Great Gatsby'},{$push:{genres:'Classic'}})
+		db.books.findOne({title:'The Great Gatsby'})
+
+## 11. Sort books by published_year ascending:
+
+		db.books.sort({'published_year':1})
+
+## 12. Sort books by rating descending:
+
+		
+
+## 13. Delete all books with a rating lower than 4.5:
+ 
 		
