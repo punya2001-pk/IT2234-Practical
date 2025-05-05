@@ -177,8 +177,11 @@ Method2:
 
 ## 12. Sort books by rating descending:
 
-		
+<img width="721" alt="15" src="https://github.com/user-attachments/assets/786973cf-243d-40d3-b8bc-a085c77de4cb" />
+	
 
 ## 13. Delete all books with a rating lower than 4.5:
+
+<img width="413" alt="16" src="https://github.com/user-attachments/assets/47df22a2-5227-49bb-859c-fe17238babb3" />
  
 		
