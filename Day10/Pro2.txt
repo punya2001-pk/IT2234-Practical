@@ -90,11 +90,14 @@ create a collection books
 
 11. Sort books by published_year ascending:
 
-		db.books.sort({'published_year':1})
+		sort - {'published_year':1}
 
 12. Sort books by rating descending:
 
-		
+		db.books.find().sort({ rating: -1 });
 
 13. Delete all books with a rating lower than 4.5:
+
+		db.books.deleteMany({ rating: { $lt: 4.5 } });
+
  
