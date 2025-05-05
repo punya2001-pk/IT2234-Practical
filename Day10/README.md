@@ -147,29 +147,33 @@ Method2:
 		
 ## 06. Find the books which published after 1960 and had rating more than 4.0
 
-		db.books.find({published_year:{$gt:1950},rating:{$gt:4.0}})
+<img width="425" alt="9" src="https://github.com/user-attachments/assets/70538c48-8661-4a4a-b004-07fbb35533d6" />
+
 
 ## 07. Project only title and author fields:
 
-		db.books.find().projection(['title','author'])
+<img width="415" alt="10" src="https://github.com/user-attachments/assets/b35b92d6-6205-40fe-b120-31e9e075e6ed" />
+
 		
 ## 08. Update the book "1984" to set available: false:
 
-		db.books.updateOne({title:'1984'},{$set:{available:false}})
-		db.books.findOne({title:'1984'})
+<img width="416" alt="11" src="https://github.com/user-attachments/assets/d9a76ef9-674e-4cf8-b82e-4d06a0d0ccea" />
+
 
 ## 09. Increase the rating of "Brave New World" by +0.1:
 
-		db.books.updateOne({title:'Brave New World'},{$inc:{rating:0.1}})
+<img width="370" alt="12" src="https://github.com/user-attachments/assets/6cef106b-4f79-4363-90e3-150fab3390af" />
+
 
 ## 10. Add a new genres "Classic" to "The Great Gatsby":
 
-		db.books.updateOne({title:'The Great Gatsby'},{$push:{genres:'Classic'}})
-		db.books.findOne({title:'The Great Gatsby'})
+<img width="496" alt="13" src="https://github.com/user-attachments/assets/d95e6fc7-0c2a-4bdb-b16a-83ef3277052a" />
+
 
 ## 11. Sort books by published_year ascending:
 
-		db.books.sort({'published_year':1})
+<img width="719" alt="14" src="https://github.com/user-attachments/assets/0f2efb9d-2f7a-49cb-84a3-95dbb30894e1" />
+
 
 ## 12. Sort books by rating descending:
 
