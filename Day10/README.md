@@ -2,10 +2,12 @@
 
 ## 01. How to delete database
 
-Method1: 
+## Method1: 
+
 ![2](https://github.com/user-attachments/assets/7aba12a5-00c2-44b7-95a6-4d3c69b544ec)
 
-Method2:
+## Method2:
+
 ![1](https://github.com/user-attachments/assets/6d87d389-6523-483f-8033-c380a29e401a)
 	
 
