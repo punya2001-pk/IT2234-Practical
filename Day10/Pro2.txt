@@ -1,7 +1,7 @@
 create a database bookshop
 create a collection books
 
-01. insert the following data // 01
+01. insert the following data 
 {
   "title": "The Hobbit",
   "author": "J.R.R. Tolkien",
@@ -49,20 +49,20 @@ create a collection books
     "rating": 4.2
   }
 
-02. Find all books // 02,03,04
+02. Find all books 
 
 		db["books"].find()
 
 
-03. Find all books published after 1950 // 05
+03. Find all books published after 1950 
 
 		db.books.find({published_year:{$gt:1950}})
 
-04. Find the avilable books // 06,07
+04. Find the avilable books 
 
 		db.books.find({available:true})
 		
-05. Find all books that belong to the "Dystopian" genres // 08
+05. Find all books that belong to the "Dystopian" genres 
 
 		db.books.find({genres:'Dystopian'})
 		
