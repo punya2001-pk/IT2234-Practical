@@ -39,6 +39,7 @@ school-api/
    ```bash
    node index.js
    ```
+   <img width="959" alt="1" src="https://github.com/user-attachments/assets/d9392989-2562-4520-9078-14b9a5ab779b" />
 
 ---
 
@@ -75,16 +76,11 @@ school-api/
 - Previously demonstrated in practical sessions.
 
 ### ✅ Degrees
-![Degrees](./screenshots/degree_get.png)
+<img width="959" alt="2" src="https://github.com/user-attachments/assets/0d3c539a-8261-4601-b83a-d4ca406af403" />
+<img width="959" alt="3" src="https://github.com/user-attachments/assets/d3b11245-7536-4f32-a41d-d7bb5fe554e6" />
+
 
 ### ✅ Students
-![Students](./screenshots/student_get.png)
-
----
-
-## 📎 Project Download
-
-Download the project ZIP directly:  
-**[Download Here](./SchoolAPI.zip)**
+<img width="959" alt="4" src="https://github.com/user-attachments/assets/ccdfec19-6454-48bf-9532-548e619102d6" />
 
 ---
