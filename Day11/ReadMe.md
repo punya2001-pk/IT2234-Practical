@@ -1,6 +1,6 @@
 # 🎓 University Course API
 
-A RESTful API service for managing university courses, developed using **Node.js**, **Express**, and **MongoDB** with **Mongoose** as the ODM. This service enables full CRUD operations and supports lookups by both ID and course code.
+A restful API service for managing university courses, developed using **Node.js**, **Express**, and **MongoDB** with **Mongoose** as the ODM. This service enables full CRUD operations and supports lookups by both ID and course code.
 
 ---
 
@@ -50,8 +50,10 @@ university-course-api/
    ```bash
    node index.js
    ```
-
+   
    Server will be live at: `http://localhost:3001`
+
+   <img width="959" alt="1" src="https://github.com/user-attachments/assets/1ea3dee8-f07d-42fe-b799-469a8030dfb6" />
 
 ---
 
@@ -73,13 +75,12 @@ Base path: `/Course`
 ## 📘 Example Data Format
 
 ```json
-{
-  "code": "CS1010",
-  "name": "Intro to Programming",
-  "credits": 4,
-  "description": "Covers programming fundamentals in JavaScript."
-}
+"code": "IT2234",
+  "name": "Practical for Web Services",
+  "credits": 3,
+  "description": "Build a rest API with nodeJS Technology"
 ```
+<img width="959" alt="2" src="https://github.com/user-attachments/assets/7e5216aa-f5f7-488a-b67d-a2f13803c662" />
 
 ---
 
@@ -99,22 +100,28 @@ Base URL: `http://localhost:3001`
 - Headers: `Content-Type: application/json`
 - Body:
 ```json
-{
-  "code": "CS1010",
-  "name": "Intro to Programming",
-  "credits": 4,
-  "description": "Covers programming fundamentals in JavaScript."
-}
+"code": "IT2234",
+  "name": "Practical for Web Services",
+  "credits": 3,
+  "description": "Build a rest API with nodeJS Technology"
 ```
+<img width="959" alt="3" src="https://github.com/user-attachments/assets/abd74c36-3c8a-41bd-b027-056462786920" />
+
 
 ### 📥 Fetch All Courses
 - **GET** `/Course/`
+  <img width="955" alt="4" src="https://github.com/user-attachments/assets/4c573584-cf1b-48c1-96c2-6153d212ae4e" />
+
 
 ### 🔍 Get Course by ID
 - **GET** `/Course/{id}`
+  <img width="954" alt="5" src="https://github.com/user-attachments/assets/bf0cda3b-a581-49d1-8d67-d11f2d209c5f" />
+
 
 ### 🔎 Get Course by Code
 - **GET** `/Course/code/CS1010`
+  <img width="959" alt="6" src="https://github.com/user-attachments/assets/119f73b5-72d5-42bf-940a-ccdec48245fa" />
+
 
 ### ✏️ Update a Course
 - **PUT** `/Course/{id}`
@@ -122,12 +129,14 @@ Base URL: `http://localhost:3001`
 - Body:
 ```json
 {
-  "code": "CS1010",
-  "name": "Advanced Programming",
-  "credits": 5,
-  "description": "Updated course content."
+   "code": "IT2234",
+    "name": "Updated Course Name",
+    "credits": 4,
+    "description": "Updated course description"
 }
 ```
+<img width="959" alt="7" src="https://github.com/user-attachments/assets/4c293115-9f26-4541-85d0-ddae9397c0e2" />
 
 ### ❌ Delete a Course
 - **DELETE** `/Course/{id}`
+<img width="959" alt="8" src="https://github.com/user-attachments/assets/9639bad0-780a-4fa0-9806-d5073c56d120" />
